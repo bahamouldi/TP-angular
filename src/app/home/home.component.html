@@ -1,0 +1,41 @@
+<div style="width:1000px; margin-left: auto; margin-right: auto;">
+    <aside id="leftmenu">
+      <img src="assets/img/logo.png" />
+      <header>
+        <h4 style="text-align: center;">Explorez nos cakes</h4>
+      </header>
+      <input type="search" class="searchbox" placeholder="Search our store" />
+      <ul>
+        <li><button (click)="changePageToTous()">Tous</button></li>
+        <li><button>Cheese cakes</button></li>
+        <li><button>Tartes</button></li>
+        <li><button>Promotions</button></li>
+      </ul>
+    </aside>
+  
+    <main id="main">
+      <button (click)="save()" type="button">J'aime</button>
+      <span id="favorite">{{ favoriteMessage }}</span>
+      <article>
+        <header>
+          <h1 style="font-size:35px;color:#a593c2">Bienvenue à notre boutique !</h1>
+        </header>
+        <h2>Notre histoire</h2>
+        <p>
+          Pendant de nombreuses années, Cake Shop a préparé les gâteaux les plus délicieux...
+        </p>
+        <figure>
+          <img src="assets/img/cakes.jpg" width="600" alt="La vitrine de notre boutique" />
+          <figcaption>Vitrine de la boutique Cake's shop</figcaption>
+        </figure>
+        <hr />
+        <section>
+          <h3 style="font-family:verdana;">&nbsp;Nos promotions hebdomadaire</h3>
+          <h4>Cheese cake</h4>
+          30dt - 4 personnes<br />
+          <img src="assets/img/téléchargement.jpeg" width="500" alt="Cheesecake avec caramel" height="300" />
+        </section>
+      </article>
+    </main>
+  </div>
+  
